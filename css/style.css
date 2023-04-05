@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(0, 0%, 94%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+main{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 22rem;
+    height: 40rem;
+    border-radius: 1.5rem 1.5rem 7rem 1.5rem;
+}
+
+form{
+    margin-top: 4rem;
+    width: 22rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form .info label{
+    color: hsl(0, 1%, 44%);
+    text-transform: uppercase; 
+    font-weight: 700;
+    letter-spacing: 2px;
+    align-self: flex-start;
+}
+
+form .info .validation{
+    font-size: 12px; 
+    color:red; 
+    font-style:oblique; 
+    width:5rem; 
+    text-align:center;
+}
+
+form .main-info{
+    display: flex;
+}
+
+form .main-info .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+} 
+
+form .info .validation{
+    font-size: 12px;
+}
+
+input[type = text]{
+    font-size: 20px;
+    font-weight: 700;
+    width: 6rem;
+    margin: 0.3rem;
+    padding: 1rem;
+    outline: none;
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 0.5rem;
+    caret-color:hsl(259, 100%, 65%);
+}
+
+input[type = text]:focus{
+    border-color: hsl(259, 100%, 65%);
+}
+
+hr{
+    margin-top: 5rem;
+    width: 18rem;
+    border: none;
+    border-bottom: 2px solid hsl(0, 0%, 86%);
+}
+
+.arrow{
+    background-image: url(../assets/images/icon-arrow.svg);
+    background-color: hsl(259, 100%, 65%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 2.3rem;
+    padding: 2.6rem;
+    border-radius: 5rem;
+    border: none;
+    width: 1rem;
+    height: 1rem;
+    margin-top: 3rem;
+    position: relative;
+    top: -5.5rem;
+    cursor: pointer;
+}
+
+.arrow:hover{
+    background-color: black;
+}
+
+.result-info{
+    margin-top: -3rem;
+    font-size: 3.5rem;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.result-info p{
+    color: hsl(259, 100%, 65%);
+}
+
+.result-info p span{
+    color: hsl(0, 0%, 8%);
+}
+
+  
+
+@media (min-width:1440px) {
+    main{
+        width: 44rem;
+        padding-left: 4rem;
+        align-items: start;
+    }
+
+    form{
+        width: 44rem;
+        align-items: start;
+    }
+    
+    form .info{
+        width: 10rem;
+        align-items: start;
+    }    
+
+    form .info .validation{
+        width:8rem; 
+    }
+
+    input[type = text]{
+        width: 8rem;
+        font-size: 32px;
+    }
+
+    hr{
+        width: 35rem;
+        margin-top: 3rem;
+    }
+
+    .arrow{
+        top: -5.5rem;
+        left: 30rem;
+    }
+
+    .result-info{
+        margin-top: -5rem;
+        font-size: 5rem;
+        font-weight: 800;
+        font-style: italic;
+        line-height: 6rem;
+    }
+}
